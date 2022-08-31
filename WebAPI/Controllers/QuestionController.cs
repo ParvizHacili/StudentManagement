@@ -46,5 +46,7 @@ namespace WebAPI.Controllers
             var question = _questionServices.GetQuestions();
             return Ok(new {status=200,message=question});
         }
+
+        //some code
     }
 }
