@@ -1,7 +1,7 @@
 ﻿using Business.Abstract;
 using DataAccess.Abstract;
 using Entities.Concrete;
-using Entities.DTOs;
+
 
 namespace Business.Concrete
 {
@@ -15,7 +15,6 @@ namespace Business.Concrete
             _commentDal = commentDal;
             _userServices = userServices;
         }
-
         public void AddComment(string comment, string email, int questionId)
         {
             var user = _userServices.GetUserByEmail(email);
